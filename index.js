@@ -20,7 +20,7 @@ function currentLine(katzDeliLine) {
   var i = 0
   while (i < katzDeliLine.length) {
     line += ` ${i + 1}. ${katzDeliLine[i]},`
-    line++
+    i++
   }
   return line
 }
