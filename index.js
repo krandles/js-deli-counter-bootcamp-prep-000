@@ -12,3 +12,11 @@ function nowServing(katzDeliLine) {
     return `Currently serving ${katzDeliLine[0]}.`
   }
 }
+
+function currentLine(katzDeliLine) {
+  var line = "The line is currently"
+  for (i = 0; i < katzDeliLine.length; i++) {
+    line += ` ${i + 1}. ${katzDeliLine[i],}`
+  }
+  return line
+}
